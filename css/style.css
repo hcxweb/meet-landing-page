@@ -252,7 +252,7 @@ button {
   }
 }
 .main p {
-  max-width: 51rem;
+  max-width: 53rem;
   margin: 0 auto;
 }
 @media (max-width: 48em) {
