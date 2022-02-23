@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/desktop/image-hero-left.png), url(../assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-position: left -3.3rem top 17rem, right -3.3rem top 22.5rem;
+    padding: 8rem 0 2rem;
+
+    @media (max-width: 80em) {
+        background-image: url(.././assets/tablet/image-hero.png);
+        background-position: center 14rem;
+        background-size: 82rem;
+        padding-top: 5rem;
+    }
+
+    @media (max-width: 45em) {
+        background-size: 110vw;
+        background-position: center 13rem;
+    }
+
+    &__content {
+        text-align: center;
+        margin-top: 10.8rem;
+
+        @media (max-width: 80em) {
+            margin-top: 44rem;
+        }
+
+        @media (max-width: 45em) {
+            margin-top: 68vw;
+        }
+
+        h1 {
+            max-width: 45rem;
+            margin: 0 auto 3.5rem;
+
+            @media (max-width: 80em) {
+                max-width: 35rem;
+                margin-bottom: 2.3rem;
+            }
+
+            @media (max-width: 25em) {
+                max-width: 29rem;
+            }
+        }
+
+        p {
+            max-width: 55rem;
+            margin: 0 auto 3rem;
+
+            @media (max-width: 80em) {
+                max-width: 45rem;
+            }
+
+            @media (max-width: 25em) {
+                max-width: 33rem;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.6rem;
+
+        @media (max-width: 25em) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

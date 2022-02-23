@@ -1,0 +1,51 @@
+@use '../abstract/variables' as *;
+
+.btn {
+    display: inline-block;
+    padding: 1.6rem 4rem;
+    border-radius: 5rem;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 300ms,
+                transform 50ms;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.btn--primary {
+    background-color: $color-primary;
+
+    span {
+        color: $color-primary-light;
+    }
+    
+    &:focus-visible {
+        outline: 2px solid $color-primary;
+        outline-offset: 2px;
+    }
+}
+
+.btn--secondary {
+    background-color: $color-secondary;
+
+    span {
+        color: $color-secondary-light;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-secondary;
+        outline-offset: 2px;
+    }
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn--link {
+    padding: 1.6rem 2.9rem;
+}

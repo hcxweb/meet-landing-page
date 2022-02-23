@@ -1,0 +1,71 @@
+@use '../abstract/variables' as *;
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    color: $color-dark-blue;
+
+    @media (max-width: 48em) {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+
+    @media (max-width: 25em) {
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+
+    @media (max-width: 25em) {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+}
+
+.main h2 {
+    color: $color-dark-blue;
+}
+
+.footer h2 {
+    color: $color-white;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.header p,
+.main p {
+    color: $color-grey;
+
+    @media (max-width: 48em) {
+        font-size: 1.6rem;
+    }
+}
+
+.footer p {
+    color: $color-white;
+}
+
+.overline {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color-primary;
+}
+
+button {
+    font: inherit;
+}
+

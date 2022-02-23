@@ -1,0 +1,50 @@
+@use '../abstract/variables' as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, rgba($color-primary, 0.9), rgba($color-primary, 0.9)),
+                url(.././assets/desktop/image-footer.jpg)
+                no-repeat center center/cover;
+    padding: 11.6rem 16.5rem 10.4rem;
+
+    @media (max-width: 78.5em) {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to right, rgba($color-primary, 0.9), rgba($color-primary, 0.9)),
+                url(.././assets/tablet/image-footer.jpg)
+                no-repeat center center/cover;
+        padding: 9rem 0 6.5rem;
+    }
+
+    .number {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    h2 {
+        max-width: 35rem;
+    }
+
+    p {
+        max-width: 37rem;
+        margin: 0 auto;
+        padding: 0 0 1rem 2.5rem;
+        opacity: 0.8;
+
+        @media (max-width: 78.5em) {
+            max-width: 58rem;
+            margin: 3.5rem auto 4rem;
+            padding: 0;
+        }
+
+        @media (max-width: 40em) {
+            max-width: 80%;
+            margin: 2.4rem auto 3.2rem;
+        }
+    }
+}

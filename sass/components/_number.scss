@@ -1,0 +1,26 @@
+@use '../abstract/variables' as *;
+
+.number {
+    display: inline-block;
+    position: relative;
+    width: 5.6rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+    color: $color-grey;
+    background-color: $color-white;
+    border: 1px solid rgba($color-grey, 0.25);
+    border-radius: 50%;
+
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        width: 1px;
+        height: 8.4rem;
+        background-color: rgba($color-grey, 0.25);
+    }
+}
+
